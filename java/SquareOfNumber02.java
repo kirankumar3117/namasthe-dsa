@@ -1,4 +1,4 @@
-public class SquareOfNumber{
+public class SquareOfNumber02{
     public static int square(int x){
         return x * x;
     };

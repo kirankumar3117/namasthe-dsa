@@ -1,4 +1,4 @@
-public class SumOfTwo {
+public class SumOfTwo01 {
     public static int sum(int a, int b) {
         return a + b;
     }
