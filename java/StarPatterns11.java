@@ -11,7 +11,7 @@ public class StarPatterns11{
         }
     }
 
-    //right angle pattern 
+    //right angle star pattern 
     public static void rightAngleStarPattern(int n){
         for(int i=0; i<n;i++){
             String row = "";
@@ -22,7 +22,7 @@ public class StarPatterns11{
         }
     }
 
-     //right angle pattern 
+     //right angle number pattern 
     public static void rightAngleNumberPattern(int n){
         for(int i=0; i<n;i++){
             String row = "";
@@ -33,9 +33,21 @@ public class StarPatterns11{
         }
     }
 
+     //right triangle repeated number pattern 
+    public static void rightTrianleRepatedNummberPattern(int n){
+        for(int i=0; i<n;i++){
+            String row = "";
+            for(int j=0;j<=i;j++){
+                row += (i + 1);
+            }
+            System.out.println(row);
+        }
+    }
+
     public static void main(String[] args){
         // nxnStar(4);
         // rightAngleStarPattern(4);
-        rightAngleNumberPattern(4);
+        // rightAngleNumberPattern(4);
+        rightTrianleRepatedNummberPattern(4);
     }
 }
