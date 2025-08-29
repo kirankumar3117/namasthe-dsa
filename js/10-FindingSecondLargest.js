@@ -9,17 +9,37 @@ function FindSecondLargest(arr) {
   let secondLargest = arr[0] < arr[1] ? arr[0] : arr[1];
 
   for (let i = 2; i < arr.length; i++) {
-    if (arr[i] > secondLargest && arr[i] != firstLargest) {
+    if (arr[i] > firstLargest) {
+      secondLargest = firstLargest;
+      firstLargest = arr[i];
+    } else if (arr[i] > secondLargest && arr[i] != firstLargest) {
       secondLargest = arr[i];
-      if (firstLargest < secondLargest) {
-        secondLargest = firstLargest;
-        firstLargest = arr[i];
-      }
     }
   }
 
   return secondLargest;
 }
+
+// function FindSecondLargest(arr) {
+//   if (arr.length < 2) {
+//     return -1;
+//   }
+
+//   let firstLargest = arr[0] > arr[1] ? arr[0] : arr[1];
+//   let secondLargest = arr[0] < arr[1] ? arr[0] : arr[1];
+
+//   for (let i = 2; i < arr.length; i++) {
+//     if (arr[i] > firstLargest) {
+//       secondLargest = arr[i];
+//       if (firstLargest < secondLargest) {
+//         secondLargest = firstLargest;
+//         firstLargest = arr[i];
+//       }
+//     }
+//   }
+
+//   return secondLargest;
+// }
 
 /* Corner Cases */
 
