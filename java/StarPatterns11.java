@@ -54,11 +54,26 @@ public class StarPatterns11{
         }
     }
 
+    public static void rightAlignedRightAngledStarPattern(int n){
+        for(int i = 0; i < n ;i ++){
+            String row = "";
+            for(int j = n-1;j>= 0; j--){
+                if(j<=i){
+                    row += "*";
+                }else{
+                    row += " ";
+                }
+            }
+            System.out.println(row);
+        }
+    }
+
     public static void main(String[] args){
         // nxnStar(4);
         // rightAngleStarPattern(4);
         // rightAngleNumberPattern(4);
         // rightTrianleRepatedNummberPattern(4);
         // reverseRightAngledTriangleIncreasingNumbers(4);
+        rightAlignedRightAngledStarPattern(4);
     }
 }

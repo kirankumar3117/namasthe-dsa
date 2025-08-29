@@ -50,8 +50,23 @@ const reverseRightAngledTriangleIncreasingNumbers = (n) => {
   }
 };
 
+const rightAlignedRightAngledStarPattern = (n) => {
+  for (let i = 0; i < n; i++) {
+    let row = "";
+    for (let j = n - 1; j >= 0; j--) {
+      if (j <= i) {
+        row += "*";
+      } else {
+        row += " ";
+      }
+    }
+    console.log(row);
+  }
+};
+
 // nxnStarPattern(4);
 // rightAngleStarPattern(4);
 // rightAngleNumberPattern(4);
 // rightTriangleRepeatedNumberPattern(4);
 // reverseRightAngledTriangleIncreasingNumbers(4);
+rightAlignedRightAngledStarPattern(4);
