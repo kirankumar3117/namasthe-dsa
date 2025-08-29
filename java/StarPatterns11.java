@@ -81,6 +81,18 @@ public class StarPatterns11 {
         }
     }
 
+    public static void rightAngledTriangleOfAlternatingOneAndZero(int n) {
+        int toggle = 1;
+        for (int i = 0; i < n; i++) {
+            String row = "";
+            for (int j = 0; j <= i; j++) {
+                row += toggle;
+                toggle = (toggle == 0) ? 1 : 0;
+            }
+            System.out.println(row);
+        }
+    }
+
     public static void main(String[] args) {
         // nxnStar(4);
         // rightAngleStarPattern(4);
@@ -88,6 +100,7 @@ public class StarPatterns11 {
         // rightTrianleRepatedNummberPattern(4);
         // reverseRightAngledTriangleIncreasingNumbers(4);
         // rightAlignedRightAngledStarPattern(4);
-        rightAngleAlternativeOnesAndZeros(4);
+        // rightAngleAlternativeOnesAndZeros(4);
+        // rightAngledTriangleOfAlternatingOneAndZero(4);
     }
 }

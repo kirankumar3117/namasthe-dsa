@@ -67,12 +67,22 @@ const rightAlignedRightAngledStarPattern = (n) => {
 const rightAngleAlternativeOnesAndZeros = (n) => {
   for (let i = 0; i < n; i++) {
     let row = "";
+    let toggle = 1;
     for (let j = 0; j <= i; j++) {
-      if (j % 2 == 0) {
-        row += "1";
-      } else {
-        row += "0";
-      }
+      row += toggle;
+      toggle = toggle === 0 ? 1 : 0;
+    }
+    console.log(row);
+  }
+};
+
+const rightAngledTriangleOfAlternatingOneAndZero = (n) => {
+  let toggle = 1;
+  for (let i = 0; i < n; i++) {
+    let row = "";
+    for (let j = 0; j <= i; j++) {
+      row += toggle;
+      toggle = toggle === 0 ? 1 : 0;
     }
     console.log(row);
   }
@@ -84,4 +94,5 @@ const rightAngleAlternativeOnesAndZeros = (n) => {
 // rightTriangleRepeatedNumberPattern(4);
 // reverseRightAngledTriangleIncreasingNumbers(4);
 // rightAlignedRightAngledStarPattern(4);
-rightAngleAlternativeOnesAndZeros(4);
+// rightAngleAlternativeOnesAndZeros(4);
+// rightAngledTriangleOfAlternatingOneAndZero(4);
