@@ -1,7 +1,7 @@
 
 public class Palindrome13 {
 
-    public static Boolean checkPalindrome(int n) {
+    public boolean checkPalindrome(int n) {
         if (n < 0) {
             return false;
         }
@@ -16,7 +16,7 @@ public class Palindrome13 {
     }
 
     public static void main(String[] args) {
-        Boolean result = checkPalindrome(151);
-        System.out.println("result: " + result);
+        Palindrome13 pali = new Palindrome13();
+        System.out.println(pali.checkPalindrome(121));
     }
 }
