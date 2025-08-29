@@ -24,7 +24,7 @@ const rightAngleNumberPattern = (n) => {
   for (let i = 0; i < n; i++) {
     let row = "";
     for (let j = 0; j <= i; j++) {
-      row +=  (j+1)
+      row += j + 1;
     }
     console.log(row);
   }
@@ -34,7 +34,17 @@ const rightTriangleRepeatedNumberPattern = (n) => {
   for (let i = 0; i < n; i++) {
     let row = "";
     for (let j = 0; j <= i; j++) {
-      row +=  (i+1)
+      row += i + 1;
+    }
+    console.log(row);
+  }
+};
+
+const reverseRightAngledTriangleIncreasingNumbers = (n) => {
+  for (let i = n; i > 0; i--) {
+    let row = "";
+    for (let j = 0; j < i; j++) {
+      row += j + 1;
     }
     console.log(row);
   }
@@ -43,4 +53,5 @@ const rightTriangleRepeatedNumberPattern = (n) => {
 // nxnStarPattern(4);
 // rightAngleStarPattern(4);
 // rightAngleNumberPattern(4);
-rightTriangleRepeatedNumberPattern(4);
+// rightTriangleRepeatedNumberPattern(4);
+// reverseRightAngledTriangleIncreasingNumbers(4);

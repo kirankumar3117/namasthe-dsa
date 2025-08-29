@@ -44,10 +44,21 @@ public class StarPatterns11{
         }
     }
 
+    public static void reverseRightAngledTriangleIncreasingNumbers(int n){
+        for( int i=n;i >0;i--){
+            String row = "";
+            for(int j = 0; j < i; j++){
+                row += (j + 1);
+            }
+            System.out.println(row);
+        }
+    }
+
     public static void main(String[] args){
         // nxnStar(4);
         // rightAngleStarPattern(4);
         // rightAngleNumberPattern(4);
-        rightTrianleRepatedNummberPattern(4);
+        // rightTrianleRepatedNummberPattern(4);
+        // reverseRightAngledTriangleIncreasingNumbers(4);
     }
 }
